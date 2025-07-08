@@ -2,36 +2,68 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Meu Portfólio — Luísa Barwinski</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-…"
+    crossorigin="anonymous"
+  >
+  <!-- Seu CSS customizado -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- menu de navegação -->
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Sobre mim</a></li>
-      <li><a href="formacao.html">Formação</a></li>
-      <li><a href="portfolio.html">Portfólio</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Luísa Barwinski</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuNav"
+        aria-controls="menuNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Sobre mim</a></li>
+          <li class="nav-item"><a class="nav-link" href="formacao.html">Formação</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfólio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <main>
-    <h1>Olá, eu sou Luísa Barwinski</h1>
+  <main class="container py-5">
+    <div class="row">
+      <div class="col-lg-8 mx-auto">
+        <h1 class="mb-4">Olá, eu sou Luísa Barwinski</h1>
 
-    <!-- Perfil profissional extraído do LinkedIn -->
-    <p><strong>Luísa Barwinski</strong> é uma especialista em <em>Low/No-Code &amp; AI Automation</em>, com sólida atuação como <strong>Growth Product Manager</strong> e líder de Growth Marketing.</p>
-    <p>Ela cofundou a GrowthBrainsBr, desenvolvendo projetos de automação de conteúdo e estratégias de growth em instituições como a Universidade Federal do Paraná.</p>
-    <p>Seu perfil demonstra um forte engajamento: são mais de 8.500 seguidores e milhares de publicações, reflexo do seu protagonismo em compartilhar insights sobre marketing, automação e inovação.</p>
-    <p>Atualmente, atua como <strong>Product Manager na Ademicon</strong>, liderando produtos e soluções para gestão de consórcios e automação de processos internos.</p>
+        <p><strong>Luísa Barwinski</strong> é especialista em <em>Low/No-Code &amp; AI Automation</em>, com sólida atuação como <strong>Growth Product Manager</strong> e líder de Growth Marketing.</p>
+        <p>Ela cofundou a GrowthBrainsBr, desenvolvendo projetos de automação de conteúdo e estratégias de growth na Universidade Federal do Paraná.</p>
+        <p>Atualmente, atua como <strong>Product Manager na Ademicon</strong>, liderando produtos e soluções para gestão de consórcios e automação de processos internos.</p>
 
-    <hr>
+        <hr class="my-5">
 
-    <!-- Conteúdo original sobre formação e hobbies -->
-    <p>Estudante de Análise e Desenvolvimento de Sistemas (EAD) — Uninter — Início 2024.</p>
-    <p>Nos meus tempos livres, gosto de programação, leitura e explorar novas tecnologias.</p>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas (EAD) — Uninter — Início 2024.</p>
+        <p>Nos meus tempos livres, gosto de programação, leitura e explorar novas tecnologias.</p>
+      </div>
+    </div>
   </main>
 
+  <!-- Bootstrap JS Bundle + seu main.js -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-…"
+    crossorigin="anonymous"
+  ></script>
   <script src="js/main.js"></script>
 </body>
 </html>
