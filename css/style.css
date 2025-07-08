@@ -1,16 +1,63 @@
-/* background geral */
+/* reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* corpo da página */
 body {
-  background-color: #000000;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* menu de naveção */
+nav {
+  background: #444;
+}
+nav .menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+nav .menu li a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+nav .menu li a:hover {
+  background: #666;
+}
+
+/* área principal */
+main {
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 /* títulos */
 h1 {
-  font-weight: 600;
+  margin-bottom: 1rem;
+  font-weight: bold;
 }
 
-/* cards e listas */
+/* cartões simples */
 .card {
-  border: none;
+  background: #fff;
+  padding: 16px;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+}
+
+/* links dos títulos de card */
+.card-title a {
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
 }
 .card-title a:hover {
   text-decoration: underline;
@@ -18,10 +65,36 @@ h1 {
 
 /* separador */
 hr {
-  border-top: 1px solid #dee2e6;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 2rem 0;
 }
 
-/* pequenas sombras */
-.shadow-sm {
-  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+/* formulário de contato */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+form label {
+  display: block;
+  margin-top: 12px;
+  font-weight: bold;
+}
+form input,
+form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+}
+form button {
+  margin-top: 16px;
+  padding: 10px 16px;
+  background: #444;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+form button:hover {
+  background: #666;
 }
