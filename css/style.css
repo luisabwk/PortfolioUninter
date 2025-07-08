@@ -1,0 +1,27 @@
+/* background geral */
+body {
+  background-color: #000000;
+}
+
+/* títulos */
+h1 {
+  font-weight: 600;
+}
+
+/* cards e listas */
+.card {
+  border: none;
+}
+.card-title a:hover {
+  text-decoration: underline;
+}
+
+/* separador */
+hr {
+  border-top: 1px solid #dee2e6;
+}
+
+/* pequenas sombras */
+.shadow-sm {
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075) !important;
+}
