@@ -2,44 +2,90 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfólio — Luísa Barwinski</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-…"
+    crossorigin="anonymous"
+  >
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Sobre mim</a></li>
-      <li><a href="formacao.html">Formação</a></li>
-      <li><a href="portfolio.html">Portfólio</a></li>
-      <li><a href="contato.html">Contato</a></li>
-    </ul>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Luísa Barwinski</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuNav"
+        aria-controls="menuNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Sobre mim</a></li>
+          <li class="nav-item"><a class="nav-link" href="formacao.html">Formação</a></li>
+          <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfólio</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <main>
-    <h1>Portfólio</h1>
-    <p>Aqui estão alguns dos projetos em que trabalhei:</p>
-    <ul>
-      <li>
-        <a href="https://github.com/luisa-barwinski/linkedin-job-scraper" target="_blank">
-          LinkedIn Job Scraper
-        </a>  
-        — Node.js, Puppeteer &amp; Axios para capturar vagas do LinkedIn e enviar resultados via webhook Make.com.
-      </li>
-      <li>
-        <a href="https://growthsquad.bubbleapps.io" target="_blank">
-          GrowthSquad Marketplace
-        </a>  
-        — App no-code em Bubble.com para conectar freelancers de marketing e contratantes.
-      </li>
-      <li>
-        <a href="#" target="_blank">
-          Automação de Conteúdo com IA
-        </a>  
-        — Workflow no Make.com que gera posts para Instagram/LinkedIn via IA.
-      </li>
-    </ul>
+  <main class="container py-5">
+    <h1 class="mb-4 text-center">Portfólio</h1>
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="https://github.com/luisa-barwinski/linkedin-job-scraper" target="_blank" class="stretched-link text-decoration-none">
+                LinkedIn Job Scraper
+              </a>
+            </h5>
+            <p class="card-text">Node.js, Puppeteer &amp; Axios para capturar vagas do LinkedIn e enviar resultados via webhook Make.com.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="https://growthsquad.bubbleapps.io" target="_blank" class="stretched-link text-decoration-none">
+                GrowthSquad Marketplace
+              </a>
+            </h5>
+            <p class="card-text">App no-code em Bubble.com para conectar freelancers de marketing e contratantes.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">
+              <a href="#" target="_blank" class="stretched-link text-decoration-none">
+                Automação de Conteúdo com IA
+              </a>
+            </h5>
+            <p class="card-text">Workflow no Make.com que gera posts para Instagram/LinkedIn via IA.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
 
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-…"
+    crossorigin="anonymous"
+  ></script>
   <script src="js/main.js"></script>
 </body>
 </html>
