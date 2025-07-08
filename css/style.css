@@ -9,13 +9,13 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  background: #f8f9fa;
+  background: #ffffff;
   color: #333;
 }
 
 /* menu de naveção */
 nav {
-  background: #444;
+  background: #000;
 }
 nav .menu {
   list-style: none;
